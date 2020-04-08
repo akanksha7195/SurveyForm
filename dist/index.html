@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<section id="welcome-section">
+  <h1 id="title">LinkedIn Survey form</h1>
+  <p id="description">Thank you for taking the time to help us improve our platform</p>
+</section>  
+<form id="survey-form">
+  <div id="form-group">
+    <label id="name-label">Name:</label>
+    <input type="text" id="name" placeholder="Name" required>
+  </div>
+  <div id="form-group">
+    <label id="email-label">Email:</label>
+    <input type="email" id="email" placeholder="Email" required>
+  </div>
+  <div id="form-group">
+    <label id="number-label">Age:</label>
+    <input type="number" id="number" placeholder="Number" min="20" max="100">
+  </div>  
+  <div id="form-group">
+    <label for="dropdown">You mainly use LinkedIn for?:</label>
+    <select id="dropdown" required>
+      <option value="challenges" selected>Find Jobs</option>
+      <option value="projects">Make Connections</option>
+      <option value="community">Meetups</option>
+      <option value="openSource">Internships</option>
+    </select>
+  </div>
+  <div id="form-group">
+    <label name="gender">Would you recommend it to your friends?</label><br/>
+    <input type="radio" value="Definitely" name="recommend"><label>Definitely</label>
+    <input type="radio" value="Maybe" name="recommend">
+    <label>Maybe</label>
+    <input type="radio" value="Not sure" name="recommend">
+    <label>Not sure</label>
+  </div>    
+  <div id="form-group">
+    <p>What all jobs you look for?(Check all that apply)</p>
+    <input name="prefer" value="front-end-projects" type="checkbox" class="project-tile"><label>Front-end Jobs</label>
+    <br/>
+      <input name="prefer" value="back-end-projects" type="checkbox" class="project-tile"><label>Back-end Jobs</label><br/>
+    <input name="prefer" value="data-visualization" type="checkbox" class="project-tile"><label>Data Visualization Jobs</label><br/>
+    <input name="prefer" value="challenges" type="checkbox" class="project-tile"><label>Freelancing</label><br/>
+    <input name="prefer" value="Content Writer" type="checkbox" class="project-tile"><label>Content Writer</label><br/>
+    <input name="prefer" value="Digtal Marketting" type="checkbox" class="project-tile"><label>Digtal Marketting</label><br/>
+    <input name="prefer" value="AR-VR" type="checkbox" class="project-tile"><label>AR or VR Developer</label><br/>
+    <input name="prefer" value="AI-ML" type="checkbox" class="project-tile"><label>AI/ML Developer</label><br/>
+  </div>
+  <div id="form-group">
+    <label>You can mention your Additional comments here.</label><br/>
+    <textarea placeholder="Add comments.."></textarea>
+  </div>
+  <button id="submit">Submit</button>
+</form>
+<!-- partial -->
+  
+</body>
+</html>
